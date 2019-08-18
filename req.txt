@@ -9,7 +9,6 @@ portend==2.5
 prettytable==0.7.2
 pyTelegramBotAPI==3.6.6
 pytz==2019.2
-pywin32==224
 requests==2.7.0
 six==1.12.0
 soupsieve==1.9.2
