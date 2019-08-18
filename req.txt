@@ -1,0 +1,17 @@
+backports.functools-lru-cache==1.5
+beautifulsoup4==4.8.0
+cheroot==6.5.5
+CherryPy==18.1.2
+jaraco.functools==2.0
+lxml==4.4.0
+more-itertools==7.2.0
+portend==2.5
+prettytable==0.7.2
+pyTelegramBotAPI==3.6.6
+pytz==2019.2
+pywin32==224
+requests==2.7.0
+six==1.12.0
+soupsieve==1.9.2
+tempora==1.14.1
+zc.lockfile==2.0
