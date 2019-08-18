@@ -77,7 +77,7 @@ cherrypy.quickstart(WebhookServer(), WEBHOOK_URL_PATH, {'/': {}})
 if __name__ == '__main__':
 
     foot_bot.remove_webhook()
-    foot_bot.set_webhook(url='https://122.122.122.122/AAAA',
+    foot_bot.set_webhook(url='https://109.120.159.28/footbot',
                     certificate=open(WEBHOOK_SSL_CERT, 'r'))
 
     # bot_2.remove_webhook()
