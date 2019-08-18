@@ -2,9 +2,9 @@ import cherrypy
 import telebot
 
 from bot_config import token
+from bot_output import bot
 
-
-bot = telebot.AsyncTeleBot(token)
+# bot = telebot.AsyncTeleBot(token)
 
 
 class WebhookServer(object):
