@@ -21,8 +21,6 @@ from bot_ui import buttons
 bot = telebot.TeleBot(token)
 
 
-
-
 @bot.message_handler(func=lambda message: True, commands=COMMANDS['TOP'])
 def bot_message(message):
     i = re.search(r"\d+", message.text)
@@ -241,9 +239,9 @@ def get_standings(url):
 
 
 
-
-if __name__ == '__main__':
-    bot.polling(none_stop=True)
+#
+# if __name__ == '__main__':
+#     bot.polling(none_stop=True)
 
 # for current_pos in newlist:
 #     incr = width - len(current_pos.get('team')) - 2
