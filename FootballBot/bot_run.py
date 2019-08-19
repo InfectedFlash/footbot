@@ -1,15 +1,26 @@
-
 import cherrypy
+import re
+import requests
 import telebot
-from datetime import datetime, timedelta
+import time
 
+from bs4 import BeautifulSoup
+from datetime import timedelta, datetime
+from prettytable import MSWORD_FRIENDLY
+from prettytable import PrettyTable
+from telebot import types
+
+from bot_data import LEAGUES
+from bot_data import COMMANDS
 from bot_config import token
-# from bot_output import bot
-from bot_data import COMMANDS, LEAGUES
 from bot_ui import buttons
-bot = telebot.TeleBot(token)
 
-@bot.message_handler(func=lambda message: True, commands=['text'])
+
+# 195940
+bot = telebot.AsyncTeleBot(token)
+
+
+@bot.message_handler(func=lambda message: True, commands=COMMANDS['TOP'])
 def bot_message(message):
     i = re.search(r"\d+", message.text)
     i = int(i.group(0))
@@ -223,6 +234,7 @@ def get_standings(url):
 
     return b_message, \
            b_message
+
 
 
 class WebhookServer(object):
